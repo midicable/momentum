@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Momentum</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="assets/ico/favicon.ico">
+    <link rel="stylesheet" href="css/owfont-regular.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+  </head>
+  <body>
+    <header>
+    <div class="audio_player">
+      <div class="player_controls">
+        <button class="play_prev player_icon"></button>
+        <button class="play player_icon"></button>
+        <button class="play_next player_icon"></button>
+      </div>
+      <ul class="play_list"></ul>
+    </div>
+    <div class="weather_tracker">
+      <input type="text" class="city" placeholder="[Enter city]"/>
+      <i class="weather_icon owf"></i>
+      <div class="weather_error"></div>
+      <div class="description_container">
+        <span class="temperature"></span>
+        <span class="weather_description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+    </header>
+    <main>
+      <button type="button" class="slider_icon slider_prev"></button>
+      <div class="main_content_wrapper">
+        <time class="time"></time>
+        <date class="date"></date>
+        <div class="greeting_wrapper">
+          <span class="greeting"></span>
+          <input type="text" class="user_name" placeholder="[Enter name]">
+        </div>
+      </div>
+      <button type="button" class="slider_icon slider_next"></button>
+    </main>
+    <footer>
+      <div class="main_footer_content">
+        <button type="button" class="refresh_icon"></button>
+        <div class="quote_wrapper">
+          <div class="quote"></div>
+          <div class="author"></div>
+        </div>
+      </div>
+      <div class="footer_social_links_wrapper">
+        <div class="footer_social_links">
+          <a href="https://github.com/midicable">
+            <img src="assets/svg/github_logo.svg" alt="GitHub logo" width="24" height="24">
+          </a>
+          <a href="https://rs.school/js/">
+            <img src="assets/svg/rs_school_logo.svg" alt="RSS logo" width="65" height="24">
+          </a>
+        </div>
+      </div>  
+    </footer>
+    </div>
+    <script src="scripts/time-and-date-behavior.js"></script>
+    <script src="scripts/greeting-behavior.js"></script>
+    <script src="scripts/local-storage-behavior.js"></script>
+    <script src="scripts/page-background-slider.js"></script>
+    <script src="scripts/open-weather-API-caller.js"></script>
+    <script src="scripts/quotes-API-caller.js"></script>
+    <script src="scripts/audioplayer-behavior.js"></script>
+  </body>
+</html>

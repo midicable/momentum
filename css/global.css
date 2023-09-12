@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Arial-MT';
+  src: url("../assets/fonts/Arial-MT.woff");
+}
+
+
+* {
+  margin:     0;
+  padding:    0;
+  box-sizing: border-box;
+}
+
+body {
+  display:               flex;
+  flex-flow:             column nowrap;
+  min-height:            100vh;
+  font-family:           'Arial', sans-serif;
+  font-size:             16px;
+  color:               #fff;
+  background:          rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  transition:            background-image 1s ease-in-out;
+}
+
+.player_icon,
+.slider_icon,
+.refresh_icon {
+  width:               32px;
+  height:              32px;
+  background-size:     32px 32px;
+  background-position: center;
+  background-repeat:   no-repeat;
+  background-color:    transparent;
+  border:              none;
+  outline:             none;
+  cursor:              pointer;
+  opacity:             .8;
+  transition:          .3s;
+}
+
+.player_icon:hover, 
+.slider_icon:hover,
+.refresh_icon:hover {
+  opacity: 1;
+}
+
+.player_icon:active,
+.slider_icon:active,
+.refresh_icon:active {
+  border:    0;
+  outline:   0;  
+  transform: scale(1.1);
+}
